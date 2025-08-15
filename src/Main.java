@@ -29,22 +29,22 @@ public class Main {
             codigoActual    = lines.get(0).split(",")[0];//lee  la posicion 0 de la linea 1 en este caso el cp, el split delimita cual es esa posicion 0
             //como lo converti a un .txt cada dato se divide por una coma por eso split(",")
 
-            //System.out.println ( codigoActual); imprimiria solo el primer cp 83000
+           // System.out.println ( codigoActual);// imprimiria solo el primer cp 83000
 
             for (String s : lines) { //el foreach hara una lectura linea por linea del arraylist (almacenado en S)
                 String codigoPostal = s.split(",")[0];// vuelta 1 , primer linea, primer dato (cp)
 
                 if (codigoPostal.equals(codigoActual)) {//si el primer cp es igual al cp almacenado en codigo actual (ca), incrementa el contador
                     contador++;
-                } else {//si no, detiene el conteo, imprime cuantas veces se repitio el cp anterior, reemplaza el cp por ca y reinicia el contador a 1
-                    System.out.println(codigoActual + " : " + contador + " colonias");
+               } else {//si no, detiene el conteo, imprime cuantas veces se repitio el cp anterior, reemplaza el cp por ca y reinicia el contador a 1
+                    System.out.println(" Cp " + codigoActual + " Numero de Asentamientos : " + contador );
                     codigoActual = codigoPostal;
                     contador = 1;
                 }//el foreach finaliza una vez que no hayan mas lineas que leer
             }
-            //Imprime el ultimo cp que no entro al else
-            System.out.println(codigoActual + " : " + contador + " colonias");
+           //Imprime el ultimo cp que no entro al else
+            System.out.println(" Cp " + codigoActual + " Numero de Asentamientos : " + contador);
         }
-    }
-}
+       }
+          }
 

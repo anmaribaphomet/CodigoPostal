@@ -42,7 +42,7 @@ public class Main {
                     contador = 1;
                 }//el foreach finaliza una vez que no hayan mas lineas que leer
             }
-           //Imprime el ultimo cp que no entro al else
+           //Imprime el ultimo cp que no entro al elsee
             System.out.println(" Cp " + codigoActual + " Numero de Asentamientos : " + contador);
         }
        }

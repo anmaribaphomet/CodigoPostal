@@ -26,7 +26,7 @@ public class Main {
 
         if (!lines.isEmpty()) {//inicia siempre que el array tenga contenido
 
-            codigoActual    = lines.get(0).split(",")[0];//lee  la posicion 0 de la linea 1 en este caso el cp, el split delimita cual es esa posicion 0
+            codigoActual    = lines.getFirst().split(",")[0];//lee  la posicion 0 de la linea 1 en este caso el cp, el split delimita cual es esa posicion 0
             //como lo converti a un .txt cada dato se divide por una coma por eso split(",")
 
            // System.out.println ( codigoActual);// imprimiria solo el primer cp 83000
